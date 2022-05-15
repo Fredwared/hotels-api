@@ -2,7 +2,6 @@ from fastapi import APIRouter
 from services.auth_service import AuthService
 
 router = APIRouter(
-    prefix='/auth',
     responses={
         200: {'message': 'Authenticated'},
         201: {'message': 'Created'},
@@ -12,6 +11,6 @@ router = APIRouter(
 )
 
 
-@router.post('/')
+@router.post('/login', summary="Sign in by getting user token")
 def login():
     return AuthService.login()

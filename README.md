@@ -4,7 +4,7 @@
 #### TODOs
 - Deployment with CI\CD
 - Front side on VueJs (SSR)
-- Database Firestore or PostgreSQL (Docker)
+- ~~Database Firestore or PostgreSQL (Docker)~~
 - Auth
   - Login
   - Register

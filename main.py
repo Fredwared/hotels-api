@@ -1,15 +1,11 @@
-from typing import Optional
-
 from fastapi import FastAPI
 
+from routes import (auth)
+
 app = FastAPI()
+app.title = 'Hotels API'
+app.version = '0.0.1'
+app.description = 'Hotel service app'
+app.redoc_url = '/docs'
 
-
-@app.get("/")
-def read_root():
-    return {"Hello": "World"}
-
-
-@app.get("/items/{item_id}")
-def read_item(item_id: int, q: Optional[str] = None):
-    return {"item_id": item_id, "q": q}
+app.include_router(auth.router)

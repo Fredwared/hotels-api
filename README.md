@@ -2,7 +2,7 @@
 
 
 #### TODOs
-- Deployment with CI\CD
+- ~~Deployment with CI\CD~~ (GitWorkflow partially)
 - Front side on VueJs (SSR)
 - ~~Database Firestore or PostgreSQL (Docker)~~
 - Auth

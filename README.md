@@ -1,5 +1,6 @@
 ### Hotel Api
 
+Live on [hotels.octopus.uz](https://hotels.octopus.uz)
 
 #### TODOs
 - ~~Deployment with CI\CD~~ (GitWorkflow partially)
